@@ -1,7 +1,7 @@
 use esp_idf_svc::sys::{
-    gpio_config, gpio_config_t, gpio_dump_io_configuration, gpio_int_type_t_GPIO_INTR_DISABLE,
+    gpio_config, gpio_config_t, gpio_int_type_t_GPIO_INTR_DISABLE,
     gpio_mode_t_GPIO_MODE_OUTPUT, gpio_num_t, gpio_pulldown_t_GPIO_PULLDOWN_DISABLE,
-    gpio_pullup_t_GPIO_PULLUP_DISABLE, gpio_set_level, FILE,
+    gpio_pullup_t_GPIO_PULLUP_DISABLE, gpio_set_level,
 };
 pub struct Led {
     pin: gpio_num_t,
