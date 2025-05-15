@@ -13,8 +13,8 @@ use std::time::Duration;
 
 // 假设按钮连接到GPIO0（通常是BOOT按钮）
 const BUTTON_GPIO_PIN: u32 = 0;
-// LED连接到GPIO48
-const LED_GPIO_PIN: u32 = 48;
+// LED连接到GPIO1
+const LED_GPIO_PIN: u32 = 1;
 
 // 使用静态变量来跟踪中断事件
 static mut INTERRUPT_COUNT: u32 = 0;
