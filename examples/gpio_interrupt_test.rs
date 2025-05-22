@@ -1,4 +1,4 @@
-use esp32_test::gpio::{GpioInterrupt, GpioInterruptType, GpioMode, GpioPin, GpioPullMode};
+use esp32_test::drivers::gpio::{GpioInterrupt, GpioInterruptType, GpioMode, GpioPin, GpioPullMode};
 use std::ffi::c_void;
 use std::sync::atomic::{AtomicBool, Ordering};
 /**

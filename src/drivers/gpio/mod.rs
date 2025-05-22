@@ -1,5 +1,4 @@
 pub mod control; // GPIO系统控制功能
-pub mod examples;
 /**
  * @file mod.rs
  * @brief GPIO模块导出文件

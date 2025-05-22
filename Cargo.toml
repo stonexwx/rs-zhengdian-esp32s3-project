@@ -21,12 +21,14 @@ opt-level = "z"
 default = []
 
 experimental = ["esp-idf-svc/experimental"]
+esp32s3 = []
 
 [dependencies]
 log = "0.4"
 esp-idf-svc = { version = "0.51", features = ["critical-section", "embassy-time-driver", "embassy-sync"] }
 libc = "0.2.172"
 esp-idf-sys = {version = "0.36.1", features = ["binstart"]}
+anyhow = "1.0"
 
 [build-dependencies]
 embuild = "0.33"

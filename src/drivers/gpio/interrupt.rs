@@ -12,7 +12,7 @@ use esp_idf_sys::{
  */
 use std::ffi::c_void;
 
-use crate::gpio::{GpioError, GpioResult};
+use crate::drivers::gpio::gpio_handler::{GpioError, GpioResult};
 
 /// GPIO中断处理器
 pub struct GpioInterrupt;

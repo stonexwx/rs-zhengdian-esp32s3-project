@@ -1,4 +1,4 @@
-use esp32_test::gpio::{GpioHandler, GpioInterruptType, GpioMode, GpioPullMode};
+use esp32_test::drivers::gpio::{GpioHandler, GpioInterruptType, GpioMode, GpioPullMode};
 /**
  * @file gpio_led_test.rs
  * @brief 使用封装的GPIO模块控制LED的示例

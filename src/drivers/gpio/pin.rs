@@ -14,18 +14,18 @@ use esp_idf_sys::{
     gpio_wakeup_enable, ESP_OK,
 };
 
-use crate::gpio::gpio_handler::{
+use crate::drivers::gpio::gpio_handler::{
     GpioDriveCap, GpioError, GpioInterruptType, GpioMode, GpioPullMode, GpioResult,
 };
 
 // 类型转换函数
 fn convert_mode(mode: GpioMode) -> u32 {
     match mode {
-        GpioMode::Disable => 0,      // GPIO_MODE_DISABLE
-        GpioMode::Input => 1,        // GPIO_MODE_INPUT
-        GpioMode::Output => 2,       // GPIO_MODE_OUTPUT
-        GpioMode::OutputOpenDrain => 3, // GPIO_MODE_OUTPUT_OD
-        GpioMode::InputOutput => 4,  // GPIO_MODE_INPUT_OUTPUT
+        GpioMode::Disable => 0,              // GPIO_MODE_DISABLE
+        GpioMode::Input => 1,                // GPIO_MODE_INPUT
+        GpioMode::Output => 2,               // GPIO_MODE_OUTPUT
+        GpioMode::OutputOpenDrain => 3,      // GPIO_MODE_OUTPUT_OD
+        GpioMode::InputOutput => 4,          // GPIO_MODE_INPUT_OUTPUT
         GpioMode::InputOutputOpenDrain => 5, // GPIO_MODE_INPUT_OUTPUT_OD
     }
 }
